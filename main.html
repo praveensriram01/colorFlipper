@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Flipper</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        h1 {
+            font-weight: lighter;
+        }
+
+        button {
+            font-size: 15px;
+            margin: 10% 5% 10px 10px;
+            width: 160px;
+            height: 60px;
+            border: 1px solid black;
+        }
+
+        #reset:hover {
+            background-color: white;
+            color: black;
+        }
+
+        #red:hover {
+            background-color: red;
+            color: white;
+        }
+
+        #blue:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        #green:hover {
+            background-color: green;
+            color: white;
+        }
+
+        #random:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Color Flipper</h1>
+    <h1>Welcome to Color Flipper</h1> 
+    <button id="reset" onclick="setColor('white')">Reset</button>
+    <button id="red" onclick="setColor('red')">Red</button>
+    <button id="blue" onclick="setColor('blue')">Blue</button>
+    <button id="green" onclick="setColor('green')">Green</button>
+    <button id="random" onclick="randomColor()">Random</button>
+
+    <script src="./index.js"></script>
 </body>
 </html>
